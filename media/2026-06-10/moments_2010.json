@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-10",
+  "email_subject": "Good morning \u263a\ufe0f",
+  "activity_title": "Good morning \u263a\ufe0f",
+  "activity_description": "Moment from Jack's day at The Goddard School",
+  "captured_moments": [
+    {
+      "moment_number": 1,
+      "image_url": "https://d2k9f6tk478nyp.cloudfront.net/media/test/morning1.jpg",
+      "file_type": "jpg"
+    }
+  ],
+  "total_moments": 1,
+  "email_timestamp": "2026-06-10T20:10:06.575887Z"
+}
