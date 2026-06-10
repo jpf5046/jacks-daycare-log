@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-10",
+  "email_subject": "Shared Moments from The Goddard School",
+  "activities": [
+    {
+      "title": "Happy Birthday Jai\ud83c\udf82\ud83c\udf89\ud83e\udd73\ud83c\udf88\ud83c\udf8a",
+      "description": "Birthday celebration",
+      "moments": [
+        {
+          "moment_number": 1,
+          "image_url": "https://d2k9f6tk478nyp.cloudfront.net/moments/66681a8258c23c00025d6e93/videos/5ddb30ce-cef8-43b0-8b38-82563975d21f_032972c4_dc7b_4a4d_916b_c6ae3635fd31_still_overlay.jpg",
+          "file_type": "jpg"
+        }
+      ]
+    },
+    {
+      "title": "First name, last name and today's Date",
+      "description": "Label moment",
+      "moments": [
+        {
+          "moment_number": 2,
+          "image_url": "https://d2k9f6tk478nyp.cloudfront.net/media/6480bfb77c9816011569185a/2026/moments/9/a/f/7/9af7fb21-80f0-4fa0-9423-8ec4311ca491_e53313fc_15c4_4123_aeec_1009079f6ac3_display.jpg",
+          "file_type": "jpg"
+        }
+      ]
+    },
+    {
+      "title": "Snack 1",
+      "description": "Snack time",
+      "moments": [
+        {
+          "moment_number": 3,
+          "image_url": "https://d2k9f6tk478nyp.cloudfront.net/media/6480bfb77c9816011569185a/2026/moments/7/8/b/c/78bcd9fc-145c-4276-9ec8-fd103c58ccda_9d0afd8a_1b87_493b_bd51_8adaa91e4d72_display.jpg",
+          "file_type": "jpg"
+        }
+      ]
+    }
+  ],
+  "total_moments": 3,
+  "email_timestamp": "2026-06-10T14:43:08Z"
+}
