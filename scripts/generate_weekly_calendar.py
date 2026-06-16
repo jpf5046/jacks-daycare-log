@@ -211,12 +211,18 @@ def render_week(monday: date, days: dict, output_dir: Path):
             else:
                 label = ev["action"]
             duration = ev["end"] - ev["start"]
+            narrow = ev["ncols"] > 1
             if duration >= 0.4:
-                text = f"{label}\n{fmt_clock(ev['start'])}–{fmt_clock(ev['end'])}"
-                fontsize = 7.5
+                # Tall enough for a second line. On a narrow (overlapping)
+                # box, show only the start time so the text doesn't overflow
+                # and clip (e.g. "10:09am" was rendering as "0:09am").
+                when = (fmt_clock(ev["start"]) if narrow
+                        else f"{fmt_clock(ev['start'])}–{fmt_clock(ev['end'])}")
+                text = f"{label}\n{when}"
+                fontsize = 6.0 if narrow else 7.5
             else:
                 text = f"{label} {fmt_clock(ev['start'])}"
-                fontsize = 6.5 if ev["ncols"] == 1 else 5.5
+                fontsize = 5.5 if narrow else 6.5
             ax.text(x + width / 2, ev["start"] + duration / 2, text,
                     ha="center", va="center", fontsize=fontsize, color="white",
                     fontweight="bold", zorder=4, clip_on=True)
