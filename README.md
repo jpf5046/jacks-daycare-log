@@ -4,7 +4,7 @@ Daily daycare logs for Jack, plus auto-generated weekly calendar views.
 
 ## This week
 
-![Latest weekly calendar](weekly_views/latest.png)
+![Latest weekly calendar](https://raw.githubusercontent.com/jpf5046/jacks-daycare-log/main/weekly_views/latest.png?v=init)
 
 ## How it works
 
@@ -19,7 +19,10 @@ Daily daycare logs for Jack, plus auto-generated weekly calendar views.
   `daycare_log.csv` changes on `main` and commits the updated PNGs, so the
   current week's image grows day by day. When the log rolls into a new week,
   a new PNG (e.g. `June 15th.png`) is created automatically.
-- `weekly_views/latest.png` is always a copy of the most recent week.
+- `weekly_views/latest.png` is always a copy of the most recent week. The
+  README embeds it through a raw URL with a `?v=` cache-buster that the Action
+  stamps with each commit's SHA, so GitHub's image proxy always shows the
+  freshly generated image instead of a stale cached copy.
 
 To regenerate locally:
 
